@@ -115,19 +115,16 @@ class Image extends Base {
     this.drawBorders();
 
     if (this.image.data) {
-      // Inner offset between yoga node and image box
-      // Makes image centered inside Yoga node
       const width =
         Math.min(this.height * this.ratio, this.width) -
         padding.left -
         padding.right;
       const height = this.height - padding.top - padding.bottom;
-      const xOffset = Math.max((this.width - width) / 2, 0);
 
       if (width !== 0 && height !== 0) {
         this.root.instance.image(
           this.image.data,
-          left + padding.left + xOffset,
+          left + padding.left,
           top + padding.top,
           { width, height },
         );
