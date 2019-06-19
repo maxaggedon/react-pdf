@@ -1,6 +1,6 @@
 {
-  "name": "@react-pdf/renderer",
-  "version": "1.6.2",
+  "name": "@rea-app/react-pdf",
+  "version": "1.6.3-rc.0",
   "license": "MIT",
   "author": "Diego Muracciole <diegomuracciole@gmail.com>",
   "homepage": "https://github.com/diegomura/react-pdf#readme",
